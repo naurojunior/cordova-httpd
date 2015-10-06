@@ -116,7 +116,7 @@ public class NanoHTTPD
 			Log.i( LOGTAG, "  UPLOADED: '" + value + "' = '" + files.getProperty( value ) + "'" );
 		}
 */
-		return serveFile( uri, header, myRootDir, true );
+		return new Response( HTTP_OK, MIME_HTML, "XABLAU" );
 	}
 
 	/**
